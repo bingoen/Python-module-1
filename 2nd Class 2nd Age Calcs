@@ -1,0 +1,25 @@
+
+
+currentYear = int (input("What year are we in now?"))
+theYearBorn = int (input("What is your year of birth?"))
+
+if theYearBorn > currentYear:
+    print ("Silly, your year of birth cannot be in the future can it?")
+    exit (0)
+
+if theYearBorn<=1900:
+    print ("You are supposed to be dead, sorry!")
+    exit (0)
+
+theYearEntered = int (input("Enter a year to calculate your age"))
+
+if (theYearEntered - theYearBorn) > 120:
+    print ("you'll probably be dead by then")
+    exit(0)
+
+if theYearEntered < theYearBorn:
+    print ("I cannot calculate your age in the past, the entered year should be >", theYearBorn)
+    exit(0)
+
+print ("your age in", theYearEntered, "will be", theYearEntered-theYearBorn)
+
