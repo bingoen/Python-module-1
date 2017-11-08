@@ -23,3 +23,10 @@ if theYearEntered < theYearBorn:
 
 print ("your age in", theYearEntered, "will be", theYearEntered-theYearBorn)
 
+#tasks for homework
+# 1) what if its a new bordn baby? greet hi/her
+# 2) What if someone'se age comes up as 100! Congratluate him/her
+#3)what if somesone's age is between 13 and 19? Saye ello to the teenager
+#4) if the person is 10,20,30,40...invite htem to a new decade
+#5) if the person age is a prime number, tell them that
+# 6) Add up the digits in their birth year.
