@@ -1,0 +1,23 @@
+
+#print ("my name is Ingar")
+
+#Age = 42
+
+#print("my age is", Age)
+
+#print ("in 2077 I will be ", 2077 - 1975)
+
+theYearIEntered = int (input ("please enter a year in the future"))
+
+theYearBorn = int (input ("please state your year of birth"))
+
+print (type(theYearBorn))
+print (type (theYearIEntered))
+
+print ("your age in", theYearIEntered , "will be", theYearIEntered - theYearBorn)
+
+#tests
+# 1) entered a string - breaks
+# 2) entered a decimal - breaks
+# 3) empty string - breaks
+# 4) space - breaks
