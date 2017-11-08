@@ -1,0 +1,29 @@
+import random
+
+minimum = int (input("enter the lower range"))
+maximum = int (input ("enther the higher range"))
+maxTries = 5
+
+
+myRandomNumber = random.randint(minimum, maximum)
+theNumberGuessed = int(input ("guess a number between minimum and maximum"))
+tries = 0
+
+#if (theNumberGuessed == myRandomNumber):
+ #   print ("Correct!!!")
+  #  exit(0)
+
+
+while(tries <maxTries):
+    if (theNumberGuessed != myRandomNumber):
+        tries = tries + 1
+        theNumberGuessed = int (input ("incorrect - try again!"))
+    if (theNumberGuessed == myRandomNumber):
+        print ("Correct!!!")
+        exit(0)
+
+print("you have used your five tries - sorry")
+
+
+
+
