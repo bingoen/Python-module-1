@@ -1,0 +1,17 @@
+
+import turtle
+
+myTurtle = turtle.Turtle()
+
+def drawRectangle():
+    myTurtle.forward(50)
+    myTurtle.right(90)
+    myTurtle.forward (25)
+    myTurtle.right (90)
+    myTurtle.forward(50)
+    myTurtle.right (90)
+    myTurtle.forward (25)
+
+drawRectangle()
+
+turtle.done()
