@@ -1,6 +1,8 @@
-
-
-myList = [1,2,3,5,8,13,21]
+import turtle
+myTurtle = turtle.Turtle()
+mySecondTurtle = turtle.Turtle()
+myTurtle.shape("turtle")
+myList = [1,2,3,5,8,13,21,34,55,89,144,233,377,610,987]
 print(myList)
 
 print(myList[3])
@@ -24,3 +26,11 @@ def addList():
 
 addList()
 
+def usingTurtleWithLists():
+    for i in range(0, len(myList)):
+        myTurtle.forward(myList[i])
+        myTurtle.right(90)
+
+usingTurtleWithLists()
+
+turtle.done()
