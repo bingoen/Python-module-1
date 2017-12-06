@@ -1,0 +1,26 @@
+
+
+myList = [1,2,3,5,8,13,21]
+print(myList)
+
+print(myList[3])
+
+#defining the function
+def printMyList():
+        print ("in the function")
+        for i in range (0, len(myList)):
+                print(myList[i])
+#calling the function
+printMyList()
+
+
+def addList():
+    sumOfList = 0
+    print("sum of list is:")
+    for i in range(0, len(myList)):
+        sumOfList = sumOfList + myList[i]
+
+    print ("sum is", sumOfList)
+
+addList()
+
