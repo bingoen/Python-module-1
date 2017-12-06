@@ -1,0 +1,72 @@
+
+import turtle
+
+def setupTurtle():
+        myInsideTurtle = turtle.Turtle()
+        myInsideTurtle.penup()
+        myInsideTurtle.setpos(-300, 0)
+        myInsideTurtle.pendown()
+        myInsideTurtle.color('red')
+        myInsideTurtle.pensize(2.5)
+        myInsideTurtle.speed(100)
+        return myInsideTurtle
+#call the setupTurtle function and store the result in a variable
+#called myTurtle
+myTurtle = setupTurtle()
+
+
+#define the temperaturelist
+averageTemperatureList = [3, 4, 6, 9, 14, 17, 18, 17, 14, 11, 7, 4]
+numberOfRainyDays = [22, 19, 19, 18, 17, 18, 19, 19 ,20, 21, 21, 20]
+
+
+
+#def drawRectangle():
+ #  for i in range(0,len(averageTemperatureList)):
+  #      myTurtle.left(90)
+   #     myTurtle.forward(averageTemperatureList[i])
+    #    myTurtle.right(90)
+     #   myTurtle.forward(5)
+      #  myTurtle.right(90)
+       # myTurtle.forward(averageTemperatureList[i])
+        #myTurtle.left(90)
+        #myTurtle.forward(5)
+
+
+
+def pulse(height, width):
+    #if height > 10:
+     #   myTurtle.color('green')
+    if height <= 10:
+        myTurtle.color('red')
+    myTurtle.left(90)
+    myTurtle.forward (height * 10)
+    myTurtle.right(90)
+    myTurtle.forward (width)
+    myTurtle.right(90)
+    myTurtle.forward(height * 10)
+    myTurtle.left(90)
+    myTurtle.forward(width)
+
+
+for temp in averageTemperatureList:
+    pulse(temp,25)
+
+
+
+myTurtle = setupTurtle()
+for rain in numberOfRainyDays:
+        myTurtle.color('green')
+        pulse(rain,25)
+
+
+#turtle.done()
+
+def circle(rad):
+    myTurtle.circle(rad * 10)
+
+
+#for radius in averageTemperatureList:
+  #  circle(radius)
+
+turtle.done()
