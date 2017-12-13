@@ -1,0 +1,35 @@
+
+
+myList = [1,['a,',[1,2,3],'c'], 'Hi',0.576]
+
+
+
+#print(myList[3][1])
+
+#myList = [1,2,3,4,5,6,7]
+
+# for i in range(0, len(myList)):
+#     if i == 3:
+#         for j in range(0, len(myList[3])):
+#             print(myList[i][j])
+#     else:
+#         print(myList[i])
+
+
+# for i in range(0, len(myList)):
+#     print(type(myList[i]))
+
+def listFunction(myList):
+    for i in range(0, len(myList)):
+        if (isinstance(myList[i], list)):
+            listFunction(myList[i])
+        else:
+            print(myList[i])
+
+
+listFunction(myList)
+
+
+            #print (myList[j])
+        #else:
+         #   print(myList[i])
