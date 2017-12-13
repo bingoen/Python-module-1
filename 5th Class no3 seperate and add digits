@@ -1,0 +1,93 @@
+
+# myNumber = int (input ('choose an integer number:  '))
+#
+# def addDigits(number):
+#     sumOfDigits = 0
+#     while number > 0:
+#         sumOfDigits = sumOfDigits + number % 10
+#         number = number//10
+#     print ('the sum of digist is', sumOfDigits)
+# addDigits (myNumber)
+
+
+# creditCardNumber = int (input ('enter your credit card number:  '))
+#
+# def countDigits (number):
+#     numberOfDigits = 0
+#     while number > 0:
+#         number = number//10
+#         numberOfDigits = numberOfDigits + 1
+#
+#     print ('number of digits are',numberOfDigits)
+#
+#
+# countDigits(creditCardNumber)
+#
+# if creditCardNumber != 16:
+#     print ('number should be 16 digits')
+
+
+myCcNumber = (input('Enter your cc number'))
+
+if (len (myCcNumber)!= 16):
+    print ('the number should be 16 digits')
+
+
+doubleOfDigits = []
+
+def doubleAlternateDigits(number):
+    for i in range (0, len(number)):
+        if(i % 2 == 0):
+                doubleOfDigits.append(int(number[i])*2)
+
+
+
+doubleAlternateDigits(myCcNumber)
+print (doubleOfDigits)
+
+def addDigits(number):
+    sumOfDigits = 0
+    while number > 0:
+        sumOfDigits = sumOfDigits + number % 10
+        number = number//10
+        #print ('the sum of digist is', sumOfDigits)
+    return sumOfDigits
+
+
+
+normalizedAlternateNumbers = []
+
+def validationStep2():
+    for i in range(0, len(doubleOfDigits)):
+        if (doubleOfDigits[i] >=10):
+            result = addDigits(doubleOfDigits[i])
+            normalizedAlternateNumbers.append(result)
+        else:
+            normalizedAlternateNumbers.append(doubleOfDigits[i])
+
+
+
+validationStep2()
+print ('normalized alternate numbers are', normalizedAlternateNumbers)
+
+def validationStep3():
+    sumOffAllDigits = 0
+    for i in range (0, len(normalizedAlternateNumbers)):
+        sumOffAllDigits +=normalizedAlternateNumbers[i]
+    return sumOffAllDigits
+
+sumOfAllDigits = validationStep3()
+
+print ('sum of all normalized digits is:  ', sumOfAllDigits)
+
+if (sumOfAllDigits % 10 == 0):
+    print ('the cc number is valid')
+else:
+    print ('the cc number is NOT valid')
+
+
+
+
+
+
+
