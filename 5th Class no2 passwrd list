@@ -1,0 +1,35 @@
+
+myList = [['Preben',['abc123', 'pass', 'list']], ['Ingar', ['pass1', 'pass2','pass3']]]
+
+
+
+
+selectUser = input('Select user')
+
+newPassword = input('Select new passoword')
+
+for (i in range(0,len(myList)))
+    if (name ==xx)
+        for (i in range (0,len))
+
+# if (selectUser == 'Preben'):
+#    for i in range (1, len(myList)):
+#         if newPassword in myList[i]:
+#             print ('new password cannot be same as previous three')
+#             exit()
+#
+# if (selectUser == 'Ingar'):
+#     for j in range (2, len(myList[1])):
+#         print(myList[j])
+#         if newPassword in myList[j]:
+#             print ('new password cannot be same as previous three')
+#             exit()
+#
+#
+# def listFunction(myList):
+#     for i in range(0, len(myList)):
+#         if (isinstance(myList[i], list)):
+#             listFunction(myList[i])
+#         else:
+#             print(myList[i])
+
